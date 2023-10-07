@@ -1,0 +1,62 @@
+@mixin mp($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_center_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_start {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+@mixin flex_start_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+@mixin flex_end {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+@mixin flex_end_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+@mixin flex_custom($justify, $align, $direction, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin border_custom($border, $radius) {
+  border: $border;
+  border-radius: $radius;
+}
+
+@mixin img_custom($width, $height, $object) {
+  width: $width;
+  height: $height;
+  object-fit: $object;
+}
