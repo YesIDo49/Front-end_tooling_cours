@@ -1,12 +1,7 @@
 # Boilerplate 
 Ce boilerplate a pour de faciliter le set up de plusieurs projets.  Vous trouverez sur la branche "pokedex_api" un projet fait à partir de ce Boilerplate. Il s'agit d'un Pokedex basé sur les jeux "Pokemon Rouge Feu et Vert Feuille". L'entiereté du Pokedex 3ème génération est disponible grâce à l'API "PokéAPI".
 
-Les dépendances de ce boileplate sont les suivantes :
-- Vite
-- Prettier
-- Jest
-- Husky
-- Sass
+Les dépendances de ce boileplate sont les suivantes : Vite, Prettier, Jest, ESLint, Husky, Sass
 
 
 - [Installation](#installation)
