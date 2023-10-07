@@ -1,0 +1,19 @@
+.loader {
+  @include flex_center_column;
+  width: 20%;
+  margin: 2rem auto;
+
+  img {
+    width: 2rem;
+    animation: 3s linear infinite rotate;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

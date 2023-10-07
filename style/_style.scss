@@ -1,10 +1,18 @@
+//Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
 // Base
 @import "./base/base";
 @import "./base/typography";
 
 //Components
 @import "./component/buttons";
+@import "./component/box";
+@import "./component/buttons";
+@import "./component/loader";
 
-//Utils
-@import "./utils/variables";
-@import "./utils/mixins";
+//Sections
+@import "./sections/header";
+@import "./sections/section";
+@import "./sections/footer";

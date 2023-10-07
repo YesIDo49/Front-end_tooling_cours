@@ -1,0 +1,53 @@
+.box {
+  @include flex_custom(initial, center, column, no-wrap);
+  background-color: $color-secondary;
+  width: 25vw;
+  @include border_custom(5px solid $color-secondary-dark, 5px 5px 0 0);
+
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-light;
+    border-bottom: 3px solid $color-secondary-darker;
+    width: 100%;
+    min-height: 6.5rem;
+
+    &__left {
+      width: 35%;
+      padding: 0.5rem 0;
+      @include flex_custom(space-evenly, center, column, no-wrap);
+      &__img {
+        @include img_custom(100%, 100%, contain);
+      }
+    }
+
+    &__right {
+      &__name {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+      &__subname {
+        margin-bottom: 0.5rem;
+      }
+      &__types {
+        @include flex_custom(start, center, row, no-wrap);
+        margin-bottom: 0.5rem;
+        gap: 1rem;
+
+        img {
+          @include img_custom(3rem, 100%, contain);
+        }
+      }
+    }
+  }
+
+  &__desc {
+    background-color: transparent;
+    padding: 0 0.5rem;
+
+    p {
+      text-align: justify;
+      line-height: 1.05rem;
+    }
+  }
+}

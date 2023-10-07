@@ -1,3 +1,11 @@
-body{
+@font-face {
+  font-family: Player2P;
+  src: url("./fonts/PressStart2P-Regular.ttf");
+}
+
+body {
   box-sizing: border-box;
+  background-color: $color-primary;
+  font-family: Player2P, sans-serif;
+  font-size: 10px;
 }

@@ -1,5 +1,142 @@
+@font-face {
+  font-family: Player2P;
+  src: url("./fonts/PressStart2P-Regular.ttf");
+}
 body {
   box-sizing: border-box;
+  background-color: #a8c018;
+  font-family: Player2P, sans-serif;
+  font-size: 10px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shiny-btn {
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.3rem;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.shiny-btn:active {
+  box-shadow: inset 4px 5px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.shiny-btn:hover {
+  background-color: #d5d5d5;
+}
+
+.box {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  background-color: #e0d8c0;
+  width: 25vw;
+  border: 5px solid #bfaf88;
+  border-radius: 5px 5px 0 0;
+}
+.box__info {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-bottom: 3px solid #745b32;
+  width: 100%;
+  min-height: 6.5rem;
+}
+.box__info__left {
+  width: 35%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+.box__info__left__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.box__info__right__name {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.box__info__right__subname {
+  margin-bottom: 0.5rem;
+}
+.box__info__right__types {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+.box__info__right__types img {
+  width: 3rem;
+  height: 100%;
+  object-fit: contain;
+}
+.box__desc {
+  background-color: transparent;
+  padding: 0 0.5rem;
+}
+.box__desc p {
+  text-align: justify;
+  line-height: 1.05rem;
+}
+
+.shiny-btn {
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.3rem;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.shiny-btn:active {
+  box-shadow: inset 4px 5px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.shiny-btn:hover {
+  background-color: #d5d5d5;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: 2rem auto;
+}
+.loader img {
+  width: 2rem;
+  animation: 3s linear infinite rotate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.pokelist {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

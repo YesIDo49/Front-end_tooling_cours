@@ -1,0 +1,16 @@
+.shiny-btn {
+  @include border_custom(0, 50%);
+  background-color: $color-light;
+  padding: 0.3rem;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:active {
+    box-shadow: inset 4px 5px 6px -1px rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover {
+    background-color: $color-grey;
+  }
+}

@@ -1,0 +1,4 @@
+.pokelist {
+  @include flex_custom(center, inherit, row, wrap);
+  gap: 1rem;
+}
